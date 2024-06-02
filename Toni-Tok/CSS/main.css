@@ -1,0 +1,1210 @@
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#navigation {
+    position: sticky;
+    background-color: black;
+    width: 100vw;
+    height: 7.5vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 5vh;
+}
+
+@media (min-height: 901px){
+
+@media (min-width: 1500px){
+    #navigation {
+        height: 6vh;
+        margin-bottom: 5vh;
+        grid-template-rows: 6vh;
+    }
+}
+
+@media (max-width: 1000px){
+    #navigation {
+        height: 5.5vh;
+        margin-bottom: 2.5vh;
+    }
+    
+}
+}
+
+@media (max-height: 900px){
+    #navigation {
+        min-height: 50px;
+        max-height: 70px;
+        margin-bottom: 5vh;
+    }
+}
+
+.navButtons {
+    min-width: 15vw;
+    height: 5vh;
+    min-height: 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vh;
+    color: gray;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.4s;
+    position: relative;
+    left: 2.5vw;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .navButtons {
+        font-size: 2vw;
+        border-radius: 20px;
+        width: 13vw;
+        min-width: 300px;
+        height: 5vh;
+        min-height: 50px;
+    }
+}
+
+@media (max-width: 1000px){
+    .navButtons {
+        font-size: 4vw;
+        width: 18vw;
+        max-width: 200px;
+        margin-top: 5px;
+        max-height: 50px;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .navButtons {
+        font-size: 20px;
+        border-radius: 10px;
+        margin-top: 5px;
+        max-height: 50px;
+    }
+}
+
+.navButtons:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+    transition: 0.4s;
+}
+
+.profileButton {
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 5;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    margin-left: 10vw;
+    transition: 0.4s;
+    background-size: 100% 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .profileButton {
+        margin-left: 15vw;
+        width: 5vh;
+        min-width: 50px;
+        height: 5vh;
+        min-height: 50px;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .profileButton {
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        margin-left: 10vw;
+    }
+}
+
+#userNotLogged{
+    margin-top: 40vh;
+}
+
+@media (min-width: 1500px){
+    #userNotLogged{
+        margin-top: 0;
+    }
+}
+
+#error404para {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#error404link {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    color: #000;
+}
+
+.videoDisplayer {
+    background-color: #000;
+    width: 45vw;
+    min-width: 600px;
+    height: 75vh;
+    margin: auto;
+    border: none;
+    transition: 0.4s;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .videoDisplayer {
+        background-color: #000;
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1000px){
+    .videoDisplayer {
+        width: 45vw;
+        max-width: 300px;
+        min-width: 250px;
+        min-height: 300px;
+        max-height: 450px;
+        margin: auto;
+        border: none;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .videoDisplayer {
+        background-color: #000;
+        width: 45vh;
+        height: 85vh;
+        margin: auto;
+        min-width: 150px;
+        min-height: 250px;
+        max-height: 600px;
+    }
+}
+
+.videoControls {
+    display: grid;
+    width: 45vw;
+    height: 6vw;
+    max-height: 600px;
+    align-content: center;
+    max-width: 600px;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 5vh;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .videoControls {
+        max-width: 600px;
+        width: 45vw;
+        height: 6vw;
+        margin-bottom: 5vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .videoControls {
+        width: 45vw;
+        max-width: 300px;
+        min-width: 250px;
+        height: 7.5vw;
+        margin-bottom: 5vh;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .videoControls {
+        width: 45vh;
+        height: 15vh;
+        min-width: 0px;
+        max-height: 50px;
+        margin-bottom: 0vh;
+    }
+}
+
+.videoControls div{
+    width: 100%;
+    height: 7.5vw;
+    max-height: 30px;
+}
+
+.videoControls button {
+    border: none;
+    width: 30%;
+    height: 5vw;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 20%;
+    cursor: pointer;
+}
+
+@media (max-height: 900px){
+    .videoControls button {
+        max-height: 40px;
+    }
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .contolsButtons {
+        width: 15%;
+        min-width: 50px;
+        height: 4vw;
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 1000px){
+    .contolsButtons {
+        width: 40%;
+        height: 5vw;
+        max-height: 10px;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .contolsButtons {
+        width: 30%;
+        height: 6vh;
+        top: 5%;
+        max-height: 10px;
+    }
+}
+
+#likesCounter {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-style: bold;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    #likesCounter {
+        font-size: 1.5vw;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1000px){
+    #likesCounter {
+        font-size: 2vw;
+        margin-top: 1vw;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #likesCounter {
+        margin-top: 0vh;
+        font-size: 2.5vh;
+    }
+}
+
+.likeButton {
+    background-image: url(/Toni-Tok/HTML/images/unliked.png);
+    transition: 0.4s;
+    background-color: transparent;
+    max-height: 75px;
+}
+
+@media (min-width: 1500px){
+    .likeButton {
+        background-image: url(/Toni-Tok/HTML/images/unliked.png);
+        transition: 0.4s;
+        background-color: transparent;
+        max-height: 75px;
+        margin-bottom: 20px;
+    }
+}
+
+#dropdownContent a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    padding: 2vw;
+}
+
+@media (min-height: 901px){
+@media (max-width: 1000px){
+    #dropdownContent a {
+        font-size: 3vw;
+    }
+}
+@media (min-width: 1500px){
+    #dropdownContent a {
+        font-size: 1.5vw;
+        padding: 1.5vh 2vh;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #dropdownContent a {
+        font-size: 3vw;
+    }
+}
+
+#dropdownContent a:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+#dropdownContent {
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0 0 0 20px;
+    width: 15vw;
+    margin-left: -5vw;
+    box-shadow: 0vw 1vw 2vw 1vw rgba(0, 0, 0, 0.2);
+    transition: height 0.3s ease-out;
+    transition-delay: 0.5s;
+    display: block;
+    position: absolute;
+    top: 7.5vh;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    #dropdownContent {
+        width: 500px;
+        top: 6vh;
+        max-height: 275px;
+    }
+}
+
+@media (max-width: 1000px){
+    #dropdownContent {
+        width: 20vw;
+        max-width: 300px;
+        top: 5.5vh;
+        max-height: 180px;
+        border-radius: 0 0 0 10px;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #dropdownContent {
+        width: 20vw;
+        max-width: 300px;
+        top: 50px;
+        max-height: 150px;
+    }
+}
+
+.profileButton:hover #dropdownContent {
+    height: 20vw;
+    max-height: 275px;
+    box-shadow: 0vw 1vw 2vw 1vw rgba(0, 0, 0, 0.2);
+    transition: height 0.4s ease-in;
+}
+
+@media (min-height: 901px){
+@media (max-width: 1000px){
+    .profileButton:hover #dropdownContent {
+        height: 100vh;
+        max-height: 300px;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .profileButton:hover #dropdownContent {
+        height: 225px;
+    }
+}
+
+#logInLink {
+    color: white;
+    font-size: 1.35vw;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+@media (min-height: 901px){
+    @media (min-width: 1500px){
+        #logInLink {
+            font-size: 1.35vw;
+        }
+    }
+    
+    @media (max-width: 1000px){
+        #logInLink {
+            font-size: 1.75vw;
+        }
+    }
+}
+
+.profileButton:hover {
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.signUpForm input[type="file"] {
+    display: none;
+}
+
+.selected-image {
+    display: none;
+    width: 25vw;
+    height: 25vw;
+}
+.selected-image img {
+    border-radius: 100%;
+    width: 25vw;
+    height: 25vw;
+    display: block;
+    margin: 0 auto;
+}
+
+#videoTitles {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+}
+
+#videoTags {
+    color: rgb(66, 132, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+#profilePicture{
+    margin: auto;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background-size: 100% 100%;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    #profilePicture{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media (max-width: 1000px){
+    #profilePicture{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #profilePicture{
+        width: 30vh;
+        max-width: 100px;
+        height: 30vh;
+        max-height: 100px;
+    }
+}
+
+#usernameLabel {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    #usernameLabel {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 1000px){
+    #usernameLabel {
+        font-size: 3vw;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #usernameLabel {
+        font-size: 5vh;
+    }
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+}
+
+#likedVideosContainer{
+    margin: 1%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-gap: 10px;
+    height: auto;
+}
+
+@media (max-height: 900px){
+    #likedVideosContainer{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.likedVideosDisplayer {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: none;
+    transition: 0.4s;
+    min-height: 400px;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .likedVideosDisplayer {
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border: none;
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 1000px){
+    .likedVideosDisplayer {
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border: none;
+        transition: 0.4s;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .likedVideosDisplayer {
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border: none;
+        transition: 0.4s;
+    }
+}
+
+#profileControlsContainer{
+    margin: auto;
+    width: 50%;
+    height: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profileControls{
+    background-size: 100% 100%;
+    border: none;
+    width: 5.5vw;
+    height: 5vw;
+    cursor: pointer;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#likedVideosControl{
+    background-image: url(/Toni-Tok/HTML/images/unliked.png);
+}
+
+#allVideosControl{
+    background-image: url(/Toni-Tok/HTML/images/allVideos.png);
+}
+
+#favouritedVideosControl{
+    background-image: url(/Toni-Tok/HTML/images/favourites.png);
+}
+
+#profileLinks{
+    color: rgb(66, 132, 255);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+}
+
+#commentCounter {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-style: bold;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    #commentCounter {
+        font-size: 1.5vw;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1000px){
+    #commentCounter {
+        font-size: 2vw;
+        margin-top: 1vw;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #commentCounter {
+        margin-top: 0vh;
+        font-size: 2.5vh;
+    }
+}
+
+.commentButton {
+    background-image: url(/Toni-Tok/HTML/images/comment.png);
+    transition: 0.4s;
+    background-color: transparent;
+    max-height: 75px;
+}
+
+@media (min-width: 1500px){
+    .commentButton {
+        background-image: url(/Toni-Tok/HTML/images/comment.png);
+        transition: 0.4s;
+        background-color: transparent;
+        max-height: 75px;
+        margin-bottom: 20px;
+    }
+}
+
+.commentSection {
+    width: 45vw;
+    height: 0;
+    align-content: center;
+    max-width: 800px;
+    margin-bottom: 10vh;
+    border: none;
+    border-radius: 20px;
+    transition: height 0.3s ease-out;
+    transition: 0.3s;
+    max-height: 500px;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .commentSection {
+        max-width: 600px;
+        width: 45vw;
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .commentSection {
+        width: 45vw;
+        max-width: 300px;
+        min-width: 250px;
+        margin-bottom: 10vh;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .commentSection {
+        width: 45vh;
+        margin-top: 40px;
+        margin-bottom: 10vh;
+        max-height: 200px;
+    }
+}
+
+@media (max-height: 600px){
+    .commentSection {
+        width: 45vh;
+        margin-top: 40px;
+        margin-bottom: 10vh;
+        max-height: 120px;
+        border-radius: 10px;
+        min-width: 150px;
+    }
+}
+
+.commentSectionAdd {
+    width: 45vw;
+    height: 10%;
+    position: absolute;
+    align-content: center;
+    max-width: 800px;
+    margin-bottom: 10vh;
+    border: none;
+    transition: height 0.3s ease-out;
+    transition: 0.3s;
+    background-color: rgb(80, 80, 80);
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    .commentSectionAdd {
+        max-width: 600px;
+        width: 45vw;
+        height: 6vw;
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .commentSectionAdd {
+        width: 45vw;
+        max-width: 300px;
+        min-width: 250px;
+        height: 7.5vw;
+        margin-bottom: 10vh;
+    }
+}
+}
+
+@media (max-height: 900px){
+    .commentSectionAdd {
+        width: 45vh;
+        height: 15vh;
+        margin-bottom: 10vh;
+    }
+}
+
+#commentAddContainer {
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    border-top: 1px solid #8888;
+    background-color: #ffffff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#commentAddInput {
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    width: 94%;
+    height: 60%;
+    border: none;
+    border-radius: 20px;
+    background-color: #dadada;
+    font-size: 3.5vw;
+    padding-left: 10px;
+    padding-top: 3%;
+}
+
+@media (min-width: 600px){
+    #commentAddInput {
+        left: 2%;
+        top: 10%;
+        width: 95%;
+        height: 60%;
+        font-size: 3.5vw;
+        padding-left: 10px;
+        padding-top: 3%;
+    }
+}
+
+@media (max-height: 300px){
+    #commentAddInput {
+        left: 2%;
+        top: 10%;
+        width: 92%;
+        height: 50%;
+        font-size: 3.5vw;
+        padding-left: 10px;
+        padding-top: 3%;
+    }
+}
+
+@media (max-height: 200px){
+    #commentAddInput {
+        left: 2%;
+        top: 10%;
+        width: 88%;        
+        height: 50%;
+        font-size: 3.5vw;
+        padding-left: 10px;
+        padding-top: 3%;
+    }
+}
+
+#commentAddSubmit {
+    position: absolute;
+    display: none;
+    right: 2.5%;
+    top: 10%;
+    width: 12.5%;
+    height: 80%;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(66, 132, 255);
+    cursor: pointer;
+    background-image: url(/Toni-Tok/HTML/images/send.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 600px){
+    #commentAddSubmit {
+        right: 2.5%;
+        top: 10%;
+        width: 12.5%;
+        height: 80%;
+    }
+}
+
+@media (max-height: 300px){
+    #commentAddSubmit {
+        right: 2.5%;
+        top: 10%;
+        width: 10%;
+        height: 80%;
+    }
+}
+
+@media (max-height: 200px){
+    #commentAddSubmit {
+        right: 2.5%;
+        top: 7%;
+        width: 10%;
+        height: 80%;
+    }
+}
+
+#commentPic {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+@media (max-height: 300px){
+    #commentPic {
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+    }
+}
+
+#commentUploader {
+    margin-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+}
+
+@media (min-width: 600px){
+    #commentUploader {
+        margin-left: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5vw;
+    }
+}
+
+@media (max-height: 300px){
+    #commentUploader {
+        margin-left: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5.5vw;
+    }
+}
+
+#commentText {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+}
+
+@media (min-width: 600px){
+    #commentText {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4vw;
+    }
+}
+
+@media (max-height: 300px){
+    #commentText {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4.5vw;
+    }
+}
+
+#searchContainer {
+    width: 60%;
+    height: 10vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 5vh;
+}
+
+@media (min-height: 901px){
+    @media (min-width: 1500px){
+        #searchContainer {
+            width: 60%;
+            height: 10vh;
+            grid-template-rows: 5vh;
+        }
+    }
+    
+    @media (max-width: 1000px){
+        #searchContainer {
+            width: 60%;
+            height: 5vh;
+            grid-template-rows: 2.5vh;
+        }
+    }
+    }
+    
+    @media (max-height: 900px){
+        #searchContainer {
+            width: 60%;
+            height: 10vh;
+            grid-template-rows: 5vh;
+        }
+    }
+
+#searchInput {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    background-color: #b4b4b4;
+    font-size: 1.5vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-column: 1 / 8;
+}
+
+@media (min-height: 901px){
+    @media (min-width: 1500px){
+        #searchInput {
+            width: 100%;
+            height: 100%;
+            font-size: 1vw;
+        }
+    }
+    
+    @media (max-width: 1000px){
+        #searchInput {
+            width: 100%;
+            height: 100%;
+            font-size: 2vw;
+        }
+    }
+    }
+    
+    @media (max-height: 900px){
+        #searchInput {
+            width: 100%;
+            height: 100%;
+            font-size: 1.5vw;
+            min-height: 15px;
+        }
+    }
+
+#searchInput::content {
+    background-color: #b4b4b4;
+    border: none;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchButton {
+    width: 5vh;
+    height: 103%;
+    border: none;
+    border-radius: 0 100px 100px 0;
+    background-color: #b4b4b4;
+    cursor: pointer;
+    background-image: url(/Toni-Tok/HTML/images/search.png);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 9/10;
+}
+
+@media (min-height: 901px){
+    @media (min-width: 1500px){
+        #searchButton {
+            width: 100%;
+            height: 103%;
+            background-size: 25% 50%;
+            background-position: 75% center;
+            background-repeat: no-repeat;
+        }
+    }
+    
+    @media (max-width: 1000px){
+        #searchButton {
+            right: 5.5vw;
+            width: 2.5vh;
+            height: 105%;
+            background-size: 50% 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    }
+    
+    @media (max-height: 900px){
+        #searchButton {
+            right: 5.5vw;
+            width: 5vh;
+            height: 107%;
+            min-height: 17px;
+        }
+    }
+
+#searchPageControls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 3vh;
+    margin-bottom: 1vh;
+}
+
+#searchPageControls button, #searchPageControls a{
+    color: #888888a9;
+    border: none;
+    cursor: pointer;
+    font-size: 1.75vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 10%;
+    margin: auto;
+    transition: 0.4s;
+}
+
+#searchPageControls button:hover {
+    color: #444444;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+#searchVideosContainer {
+    margin: 1%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-gap: 10px;
+    height: auto;
+}
+
+#searchVideosContainer div {
+    max-width: 225px;
+    max-height: 400px;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+#favouriteCounter {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-style: bold;
+}
+
+@media (min-height: 901px){
+@media (min-width: 1500px){
+    #favouriteCounter {
+        font-size: 1.5vw;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1000px){
+    #favouriteCounter {
+        font-size: 2vw;
+        margin-top: 1vw;
+    }
+}
+}
+
+@media (max-height: 900px){
+    #favouriteCounter {
+        margin-top: 0vh;
+        font-size: 2.5vh;
+    }
+}
+
+.favouriteButton {
+    background-image: url(/Toni-Tok/HTML/images/favourites.png);
+    transition: 0.4s;
+    background-color: transparent;
+    max-height: 75px;
+}
+
+@media (min-width: 1500px){
+    .favouriteButton {
+        background-image: url(/Toni-Tok/HTML/images/favourites.png);
+        transition: 0.4s;
+        background-color: transparent;
+        max-height: 75px;
+        margin-bottom: 20px;
+    }
+}
+
+#followButton {
+    background-color: #8888;
+    border: none;
+    width: 15vw;
+    height: 5vw;
+    margin-bottom: 5vw;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+    color: rgb(219, 219, 219);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+#followButton:hover {
+    background-color: #66666688;
+    color: white;
+}

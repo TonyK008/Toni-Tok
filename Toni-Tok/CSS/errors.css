@@ -1,0 +1,30 @@
+#formSubmitted, #formError, #smtWentWrong{
+    text-align: center;
+    font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 30vw;
+}
+
+@media (min-width: 1500px){
+    #formSubmitted, #formError, #smtWentWrong{
+        margin-top: 15vw;
+    }
+}
+
+#formGBbutton {
+    background-color: black;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+    width: 30vw;
+    height: 6.5vw;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1500px){
+    #formGBbutton {
+        font-size: 3vw;
+    }
+}
